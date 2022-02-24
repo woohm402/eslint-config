@@ -19,6 +19,14 @@ module.exports = {
     ecmaVersion: 2018,
     sourceType: 'module',
   },
+  globals: {
+    Atomics: 'readonly',
+    SharedArrayBuffer: 'readonly',
+  },
+  env: {
+    browser: true,
+    es6: true,
+  },
   plugins: ['react', '@typescript-eslint'],
   rules: {
     'import/no-named-as-default': 0,
