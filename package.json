@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-woohm402",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "woohm402's eslint configuration file for react + sass + css modules",
   "main": "index.js",
   "scripts": {
