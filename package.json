@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-woohm402",
-  "version": "0.1.4",
-  "description": "",
+  "version": "1.0.1",
+  "description": "woohm402's eslint configuration file for react + sass + css modules",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,7 +11,10 @@
     "url": "git+https://github.com/woohm402/eslint-config-woohm402.git"
   },
   "keywords": [
-    "eslint"
+    "eslint",
+    "react",
+    "sass",
+    "formatter"
   ],
   "author": "Hyunmin Woo <woohm404@gmail.com> (https://github.com/woohm402)",
   "license": "MIT",
@@ -20,13 +23,15 @@
   },
   "homepage": "https://github.com/woohm402/eslint-config-woohm402#readme",
   "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.12.1",
+    "@typescript-eslint/parser": "^5.12.1",
+    "eslint": "^8.9.0",
+    "sass": "^1.49.8",
+    "react": "^17.0.2",
     "eslint-config-prettier": "^8.4.0",
     "eslint-plugin-import": "^2.25.4",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.28.0",
-    "@typescript-eslint/eslint-plugin": "^5.12.1",
-    "@typescript-eslint/parser": "^5.12.1",
-    "eslint": "^8.9.0",
     "prettier": "^2.5.1"
   }
 }
