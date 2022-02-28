@@ -2,6 +2,10 @@
 
 This is preferred woohm402's `react + sass + css modules` eslint setting.
 
+## NPM
+
+https://www.npmjs.com/package/eslint-config-woohm402
+
 ## Usage
 
 Just install this package and peer dependencies:
