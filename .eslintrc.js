@@ -51,20 +51,15 @@ module.exports = {
     'import/order': [
       'error',
       {
-        groups: ['external', 'builtin', 'object', 'internal', 'parent', 'sibling'],
+        groups: ['external', 'builtin', 'object', 'internal', 'parent', 'sibling', 'type'],
         pathGroups: [
-          {
-            pattern: 'react',
-            group: 'external',
-            position: 'before',
-          },
           {
             pattern: './*.scss',
             group: 'sibling',
             position: 'after',
           },
         ],
-        pathGroupsExcludedImportTypes: ['react', './*.scss'],
+        pathGroupsExcludedImportTypes: ['./*.scss'],
         'newlines-between': 'always',
         alphabetize: {
           order: 'asc',
