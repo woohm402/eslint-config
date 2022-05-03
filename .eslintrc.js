@@ -40,6 +40,7 @@ module.exports = {
     'no-useless-escape': 'off',
     'react/display-name': 'off',
     'react/jsx-no-target-blank': 'off',
+    'react/jsx-no-useless-fragment': ['error', { allowExpressions: true }],
     '@typescript-eslint/camelcase': 'off',
     '@typescript-eslint/no-unused-vars': ['error', { vars: 'all', args: 'after-used', ignoreRestSiblings: true }],
     '@typescript-eslint/no-empty-interface': 'off',
