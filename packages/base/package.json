@@ -1,6 +1,6 @@
 {
   "name": "@woohm402/eslint-config-base",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "Base config for TypeScript",
   "private": false,
   "scripts": {

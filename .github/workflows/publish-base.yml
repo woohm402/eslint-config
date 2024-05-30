@@ -6,7 +6,7 @@ on:
       - base-v*
 
 jobs:
-  publich:
+  publish:
     runs-on: ubuntu-latest
     permissions:
       packages: write
