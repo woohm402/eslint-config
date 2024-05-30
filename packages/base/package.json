@@ -1,6 +1,6 @@
 {
   "name": "@woohm402/eslint-config-base",
-  "version": "0.0.20",
+  "version": "0.0.21",
   "description": "Base config for TypeScript",
   "private": false,
   "scripts": {
@@ -9,6 +9,10 @@
   "type": "module",
   "main": "index.js",
   "types": "index.d.ts",
+  "files": [
+    "index.js",
+    "index.d.ts"
+  ],
   "publishConfig": {
     "access": "public"
   },
