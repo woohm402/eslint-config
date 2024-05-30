@@ -4,7 +4,6 @@
   "description": "Base config for TypeScript",
   "private": false,
   "scripts": {
-    "lint": "eslint .",
     "test": "vitest run",
     "publish": "npm publish"
   },
@@ -39,11 +38,7 @@
     "prettier": ">= 3"
   },
   "devDependencies": {
-    "@woohm402/eslint-config-base": "0.0.8",
-    "eslint": "9.3.0",
-    "eslint-config-prettier": "9.1.0",
-    "eslint-plugin-prettier": "5.1.3",
-    "prettier": "3.2.5",
-    "vitest": "^1.6.0"
+    "vitest": "1.6.0",
+    "eslint": "9.3.0"
   }
 }
