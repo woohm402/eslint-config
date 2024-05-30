@@ -16,7 +16,17 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-          registry-url: https://npm.pkg.github.com/
-      - run: yarn publish:base
+
+      # GitHub Packages 배포
+      - name: Publish to GitHub Packages
+        run: yarn publish:base
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+
+      # npm 공용 레지스트리에 배포
+      - name: Publish to npm
+        run: |
+          echo "//registry.npmjs.org/:_authToken=${{secrets.NPM_TOKEN}}" > .npmrc
+          yarn publish:base --registry=https://registry.npmjs.org/
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
