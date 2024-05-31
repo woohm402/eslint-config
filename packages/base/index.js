@@ -1,12 +1,18 @@
+import ESLintPluginESLintCommentsConfigs from '@eslint-community/eslint-plugin-eslint-comments/configs';
 import simpleImportSort from 'eslint-plugin-simple-import-sort';
 import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended';
 import eslint from '@eslint/js';
 import tseslint from 'typescript-eslint';
 
 export default tseslint.config(eslint.configs.recommended, eslintPluginPrettierRecommended, ...tseslint.configs.recommended, {
-  plugins: { 'simple-import-sort': simpleImportSort },
+  plugins: {
+    'simple-import-sort': simpleImportSort,
+    '@eslint-community/eslint-comments':
+      ESLintPluginESLintCommentsConfigs.recommended.plugins['@eslint-community/eslint-comments'],
+  },
   rules: {
     'simple-import-sort/imports': 'error',
+    '@eslint-community/eslint-comments/no-use': ['error', { allow: [] }],
     'no-restricted-syntax': [
       'error',
       {
