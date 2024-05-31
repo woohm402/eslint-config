@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "types": ["node"],
+    "strict": true,
+    "esModuleInterop": true,
+    "jsx": "react-jsx"
+  },
+  "include": ["__tests__/**/*"],
+  "exclude": ["node_modules"]
+}
