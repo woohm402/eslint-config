@@ -1,13 +1,13 @@
-import { themes as prismThemes } from 'prism-react-renderer';
-import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
+import type { Config } from '@docusaurus/types';
+import { themes as prismThemes } from 'prism-react-renderer';
 
 const config: Config = {
-  title: 'My Site',
+  title: '@woohm402/eslint-config',
   tagline: 'Dinosaurs are cool',
   favicon: 'img/favicon.ico',
-  url: 'https://woohm402.github.io',
-  baseUrl: '/eslint-config/',
+  url: 'https://eslint-config.woohm404.com',
+  baseUrl: '/',
   organizationName: 'woohm402',
   projectName: 'eslint-config',
   deploymentBranch: 'main',
@@ -42,7 +42,7 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'My Site',
+      title: '@woohm402/eslint-config',
       logo: {
         alt: 'My Site Logo',
         src: 'img/logo.svg',
@@ -56,7 +56,7 @@ const config: Config = {
         },
         { to: '/blog', label: 'Blog', position: 'left' },
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/woohm402/eslint-config',
           label: 'GitHub',
           position: 'right',
         },

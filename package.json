@@ -6,6 +6,8 @@
   "author": "Hyunmin Woo <woohm404@gmail.com> (https://github.com/woohm402)",
   "scripts": {
     "test": "turbo run test",
+    "lint": "turbo run lint",
+    "tsc": "turbo run tsc",
     "prettier": "prettier . --check",
     "publish:base": "yarn workspace @woohm402/eslint-config-base publish",
     "publish:react": "yarn workspace @woohm402/eslint-config-react publish"
