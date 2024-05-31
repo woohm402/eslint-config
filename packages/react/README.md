@@ -1,5 +1,5 @@
-[![NPM Version](https://img.shields.io/npm/v/%40woohm402%2Feslint-config-base)](https://www.npmjs.com/package/@woohm402/eslint-config-base)
+[![NPM Version](https://img.shields.io/npm/v/%40woohm402%2Feslint-config-react)](https://www.npmjs.com/package/@woohm402/eslint-config-react)
 
-# @woohm402/eslint-config-base
+# @woohm402/eslint-config-react
 
-base configuration for JavaScript/TypeScript projects
+ESLint configuration for TypeScript React projects
