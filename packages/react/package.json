@@ -1,0 +1,54 @@
+{
+  "name": "@woohm402/eslint-config-react",
+  "version": "0.0.1",
+  "description": "Base config for TypeScript React",
+  "private": false,
+  "scripts": {
+    "test": "vitest run"
+  },
+  "type": "module",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "files": [
+    "index.js",
+    "index.d.ts"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/woohm402/eslint-config-woohm402.git",
+    "directory": "packages/react"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig"
+  ],
+  "author": "Hyunmin Woo <woohm404@gmail.com> (https://github.com/woohm402)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/woohm402/eslint-config-woohm402/issues"
+  },
+  "homepage": "https://github.com/woohm402/eslint-config-woohm402#readme",
+  "dependencies": {
+    "@eslint/compat": "1.0.3",
+    "@woohm402/eslint-config-base": "0.1.0",
+    "eslint-plugin-react-hooks": "4.6.2"
+  },
+  "peerDependencies": {
+    "@types/react": ">= 18",
+    "eslint": ">= 9",
+    "prettier": ">= 3",
+    "react": ">= 18",
+    "typescript": ">= 5"
+  },
+  "devDependencies": {
+    "@types/eslint": "8.56.10",
+    "@types/node": "20.12.13",
+    "@types/react": "18.3.3",
+    "eslint": "9.3.0",
+    "typescript": "5.4.5",
+    "vitest": "1.6.0"
+  }
+}

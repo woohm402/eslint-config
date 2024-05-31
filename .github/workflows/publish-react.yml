@@ -1,0 +1,30 @@
+name: Publish (React)
+
+on:
+  push:
+    tags:
+      - react-v*
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      packages: write
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      # GitHub Packages 배포
+      - name: Publish to GitHub Packages
+        run: |
+          echo "//npm.pkg.github.com/:_authToken=${{secrets.GITHUB_TOKEN}}" > ~/.npmrc
+          yarn publish:react --registry=https://npm.pkg.github.com/
+
+      # npm 공용 레지스트리에 배포
+      - name: Publish to npm
+        run: |
+          echo "//registry.npmjs.org/:_authToken=${{secrets.NPM_TOKEN}}" > ~/.npmrc
+          yarn publish:react --registry=https://registry.npmjs.org/
