@@ -14,6 +14,6 @@ describe('@woohm402/eslint-config-base', function () {
   it('wrong', async function () {
     const [result] = await eslint.lintFiles([`${__dirname}/wrong.ts`]);
 
-    expect(result.errorCount).toBe(1);
+    expect(result.errorCount).toBe(2);
   });
 });
