@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "types": ["node"],
+    "strict": true,
+    "esModuleInterop": true
+  },
+  "include": ["__tests__/**/*"],
+  "exclude": ["node_modules"]
+}
