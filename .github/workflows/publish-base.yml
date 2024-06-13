@@ -17,12 +17,6 @@ jobs:
         with:
           node-version: 20
 
-      # GitHub Packages 배포
-      - name: Publish to GitHub Packages
-        run: |
-          echo "//npm.pkg.github.com/:_authToken=${{secrets.GITHUB_TOKEN}}" > ~/.npmrc
-          yarn publish:base --registry=https://npm.pkg.github.com/
-
       # npm 공용 레지스트리에 배포
       - name: Publish to npm
         run: |
