@@ -12,10 +12,11 @@
     "publish:react": "yarn build && yarn workspace @woohm402/eslint-config-react publish"
   },
   "devDependencies": {
-    "prettier": "3.2.5",
-    "turbo": "1.13.3"
+    "prettier": "3.3.2",
+    "turbo": "2.0.4"
   },
   "workspaces": [
     "packages/*"
-  ]
+  ],
+  "packageManager": "yarn@4.3.1"
 }
