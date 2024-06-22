@@ -1,6 +1,6 @@
 {
   "name": "@woohm402/eslint-config-react",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Base config for TypeScript React",
   "private": false,
   "scripts": {

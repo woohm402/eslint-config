@@ -2,4 +2,4 @@ import { ESLint } from 'eslint';
 
 declare const eslintConfigBase: ESLint.Config;
 
-export = eslintConfigBase;
+export = (options?: { envAllowedFiles?: string[] }) => eslintConfigBase;
