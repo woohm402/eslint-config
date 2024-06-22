@@ -1,17 +1,19 @@
 {
   "name": "@woohm402/eslint-config-base",
-  "version": "0.1.0",
+  "version": "0.2.3",
   "description": "Base config for TypeScript",
   "private": false,
   "scripts": {
+    "build": "tsup",
     "test": "vitest run"
   },
   "type": "module",
-  "main": "index.js",
-  "types": "index.d.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "files": [
-    "index.js",
-    "index.d.ts"
+    "src/index.ts",
+    "dist/index.js",
+    "dist/index.d.ts"
   ],
   "publishConfig": {
     "access": "public"
@@ -47,6 +49,7 @@
     "@types/eslint": "8.56.10",
     "@types/node": "20.12.13",
     "eslint": "9.3.0",
+    "tsup": "^8.1.0",
     "typescript": "5.4.5",
     "vitest": "1.6.0"
   }

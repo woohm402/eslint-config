@@ -1,0 +1,49 @@
+import ESLintPluginESLintCommentsConfigs from '@eslint-community/eslint-plugin-eslint-comments/configs';
+import simpleImportSort from 'eslint-plugin-simple-import-sort';
+import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended';
+import eslint from '@eslint/js';
+import tseslint from 'typescript-eslint';
+
+export default (options?: { envAllowedFiles: string[] }) =>
+  tseslint.config(
+    eslint.configs.recommended,
+    eslintPluginPrettierRecommended,
+    ...tseslint.configs.recommended,
+    {
+      plugins: {
+        'simple-import-sort': simpleImportSort,
+        '@eslint-community/eslint-comments':
+          ESLintPluginESLintCommentsConfigs.recommended.plugins['@eslint-community/eslint-comments'],
+      },
+      rules: {
+        'simple-import-sort/imports': 'error',
+        '@eslint-community/eslint-comments/no-use': ['error', { allow: [] }],
+        'no-restricted-syntax': [
+          'error',
+          {
+            selector: "CallExpression[callee.object.name='console'][callee.property.name='log']",
+            message:
+              'console.log() 가 main 에 머지되는 것은 실수일 수 있습니다. 의도하지 않았다면 제거하고, 의도했다면 console.debug() 등 다른 메서드를 사용해주세요.',
+          },
+        ],
+      },
+    },
+    {
+      ignores: options?.envAllowedFiles ?? [],
+      rules: {
+        'no-restricted-syntax': [
+          'error',
+          {
+            selector: 'MemberExpression[object.name=process][property.name=env]',
+            message:
+              '환경변수를 여러 곳에서 접근하는 것은 위험할 수 있습니다. envAllowedFiles 에 소수의 파일들을 등록하고 그곳에서만 접근해주세요.',
+          },
+          {
+            selector: 'MemberExpression[object.meta.name=import][object.property.name=meta][property.name=env]',
+            message:
+              '환경변수를 여러 곳에서 접근하는 것은 위험할 수 있습니다. envAllowedFiles 에 소수의 파일들을 등록하고 그곳에서만 접근해주세요.',
+          },
+        ],
+      },
+    },
+  );

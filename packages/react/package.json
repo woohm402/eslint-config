@@ -1,17 +1,15 @@
 {
   "name": "@woohm402/eslint-config-react",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Base config for TypeScript React",
   "private": false,
   "scripts": {
     "test": "vitest run"
   },
   "type": "module",
-  "main": "index.js",
-  "types": "index.d.ts",
+  "main": "index.ts",
   "files": [
-    "index.js",
-    "index.d.ts"
+    "index.ts"
   ],
   "publishConfig": {
     "access": "public"
