@@ -1,15 +1,8 @@
 {
+  "extends": "../tsconfig.base.json",
   "compilerOptions": {
-    "types": ["node"],
-    "strict": true,
-    "esModuleInterop": true,
-    "module": "ESNext",
-    "moduleResolution": "Bundler",
-    "skipLibCheck": true,
-    "jsx": "react-jsx",
-    "allowJs": true,
-    "noEmit": true
+    "jsx": "react-jsx"
   },
-  "include": ["__tests__/**/*", "src"],
+  "include": ["__tests__", "src"],
   "exclude": ["node_modules"]
 }
