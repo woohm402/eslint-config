@@ -1,14 +1,13 @@
 {
   "name": "@woohm402/eslint-config-base",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Base config for TypeScript",
   "private": false,
   "scripts": {
     "test": "vitest run"
   },
   "type": "module",
-  "main": "index.js",
-  "types": "index.d.ts",
+  "main": "index.ts",
   "files": [
     "index.ts"
   ],
