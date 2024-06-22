@@ -56,8 +56,8 @@ type Options = { envAllowedFiles?: string[] };
 export default (options?: Options) =>
   tseslint.config(
     eslint.configs.recommended,
-    eslintPluginPrettierRecommended,
     ...tseslint.configs.recommended,
+    eslintPluginPrettierRecommended,
     baseRules,
     noRestrictedSyntaxForEnvNotAllowedFiles(options),
     ...(options?.envAllowedFiles && options.envAllowedFiles.length > 0 ? [noRestrictedSyntaxForEnvAllowedFiles(options)] : []),
