@@ -2,8 +2,11 @@
   "compilerOptions": {
     "types": ["node"],
     "strict": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "skipLibCheck": true
   },
-  "include": ["__tests__/**/*"],
+  "include": ["__tests__/**/*", "src"],
   "exclude": ["node_modules"]
 }
