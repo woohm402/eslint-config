@@ -20,7 +20,7 @@ Add the following to your `eslint.config.js` file:
 ```js
 import woohm402EslintConfigReact from '@woohm402/eslint-config-react';
 
-export default [...woohm402EslintConfigReact];
+export default [...woohm402EslintConfigReact()];
 ```
 
 <br />
