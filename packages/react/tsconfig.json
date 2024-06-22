@@ -3,8 +3,13 @@
     "types": ["node"],
     "strict": true,
     "esModuleInterop": true,
-    "jsx": "react-jsx"
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "skipLibCheck": true,
+    "jsx": "react-jsx",
+    "allowJs": true,
+    "noEmit": true
   },
-  "include": ["__tests__/**/*"],
+  "include": ["__tests__/**/*", "src"],
   "exclude": ["node_modules"]
 }
