@@ -38,6 +38,8 @@ const baseRules: ConfigWithExtends = {
   rules: {
     'simple-import-sort/imports': 'error',
     '@eslint-community/eslint-comments/no-use': ['error', { allow: [] }],
+    'no-shadow': 'off',
+    '@typescript-eslint/no-shadow': 'error',
   },
 };
 
@@ -68,7 +70,7 @@ type Options = { envAllowedFiles?: string[] };
 export default (options?: Options) =>
   tseslint.config(
     eslint.configs.recommended,
-    ...tseslint.configs.recommended,
+    ...tseslint.configs.strict,
     eslintPluginPrettierRecommended,
     baseRules,
     noRestrictedSyntaxForEnvNotAllowedFiles(options),
