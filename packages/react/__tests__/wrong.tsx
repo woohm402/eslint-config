@@ -9,7 +9,7 @@ export const Component = ({ name }: { name: string }) => {
   useEffect(() => {
     let ignore = false;
 
-    fetchData(name).then((data) => !ignore && setData(data));
+    fetchData(name).then((newData) => !ignore && setData(newData));
 
     return () => {
       ignore = true;

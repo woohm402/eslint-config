@@ -6,7 +6,7 @@ const eslint = new ESLint({
   overrideConfigFile: path.resolve(__dirname, '_config.js'),
 });
 
-describe('@woohm402/eslint-config-base', function () {
+describe('@woohm402/eslint-config-react', function () {
   it('right', async function () {
     const [result] = await eslint.lintFiles([`${__dirname}/right.tsx`]);
 
