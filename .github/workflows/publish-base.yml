@@ -21,5 +21,6 @@ jobs:
       - name: Publish to npm
         run: |
           yarn
+          yarn build
           echo "//registry.npmjs.org/:_authToken=${{secrets.NPM_TOKEN}}" > ~/.npmrc
-          yarn publish:base --registry=https://registry.npmjs.org/
+          yarn workspace @woohm402/eslint-config-base deploy

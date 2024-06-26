@@ -5,7 +5,7 @@
   "scripts": {
     "build": "tsup",
     "test": "vitest run",
-    "publish": "npm publish"
+    "deploy": "npm publish"
   },
   "type": "module",
   "main": "dist/index.js",

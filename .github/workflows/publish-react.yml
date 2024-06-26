@@ -20,6 +20,7 @@ jobs:
       # npm 공용 레지스트리에 배포
       - name: Publish to npm
         run: |
-          yarn  
+          yarn
+          yarn build
           echo "//registry.npmjs.org/:_authToken=${{secrets.NPM_TOKEN}}" > ~/.npmrc
-          yarn publish:react --registry=https://registry.npmjs.org/
+          yarn workspace @woohm402/eslint-config-react deploy
