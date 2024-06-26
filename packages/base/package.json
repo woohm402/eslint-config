@@ -4,7 +4,8 @@
   "description": "Base config for TypeScript",
   "scripts": {
     "build": "tsup",
-    "test": "vitest run"
+    "test": "vitest run",
+    "publish": "npm publish"
   },
   "type": "module",
   "main": "dist/index.js",
