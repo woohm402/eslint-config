@@ -16,5 +16,12 @@ export const Component = ({ name }: { name: string }) => {
     };
   }, []);
 
-  return <div>{data}</div>;
+  return (
+    <div>
+      {data}
+      {[1, 2, 3].map((item) => (
+        <div>{item}</div>
+      ))}
+    </div>
+  );
 };
