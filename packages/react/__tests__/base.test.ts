@@ -16,6 +16,6 @@ describe('@woohm402/eslint-config-react', function () {
   it('wrong', async function () {
     const [result] = await eslint.lintFiles([`${__dirname}/wrong.tsx`]);
 
-    expect(result.errorCount).toBe(1);
+    expect(result.errorCount).toBe(2);
   });
 });
