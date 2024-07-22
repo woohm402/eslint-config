@@ -6,7 +6,9 @@ ESLint configuration for TypeScript projects
 
 <br />
 
-## Installation
+## Usage
+
+### Installation
 
 install from npm or yarn:
 
@@ -22,9 +24,18 @@ import woohm402EslintConfigBase from '@woohm402/eslint-config-base';
 export default [
   ...woohm402EslintConfigBase({
     envAllowedFiles: ['src/main.ts'],
+    tsconfigRootDir: import.meta.dirname,
   }),
 ];
 ```
+
+### Parameters
+
+- `envAllowedFiles` (optional)
+  - An array of file paths that are allowed to use environment variables directly.
+  - If you have a file that uses `process.env` or `import.meta.env`, list them all.
+- `tsconfigRootDir` (required)
+  - The root directory of the TypeScript project.
 
 <br />
 
