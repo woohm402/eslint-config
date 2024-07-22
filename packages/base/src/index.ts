@@ -69,9 +69,9 @@ const baseRules: ConfigWithExtends = {
 };
 
 const noRestrictedSyntaxForEnvNotAllowedFiles = (
-  options?: Options,
+  options: Options,
 ): ConfigWithExtends => ({
-  ignores: options?.envAllowedFiles ?? [],
+  ignores: options.envAllowedFiles ?? [],
   rules: {
     'no-restricted-syntax': [
       'error',
@@ -82,17 +82,17 @@ const noRestrictedSyntaxForEnvNotAllowedFiles = (
 });
 
 const noRestrictedSyntaxForEnvAllowedFiles = (
-  options?: Options,
+  options: Options,
 ): ConfigWithExtends => ({
-  files: options?.envAllowedFiles ?? [],
+  files: options.envAllowedFiles ?? [],
   rules: {
     'no-restricted-syntax': ['error', ...consoleLogRestrictSyntax],
   },
 });
 
-type Options = { envAllowedFiles?: string[] };
+type Options = { envAllowedFiles?: string[]; tsconfigRootDir: string };
 
-export default (options?: Options) =>
+export default (options: Options) =>
   tseslint.config(
     eslint.configs.recommended,
     ...tseslint.configs.strictTypeChecked,
@@ -101,7 +101,7 @@ export default (options?: Options) =>
       languageOptions: {
         parserOptions: {
           project: true,
-          tsconfigRootDir: import.meta.dirname,
+          tsconfigRootDir: options.tsconfigRootDir,
         },
       },
     },
