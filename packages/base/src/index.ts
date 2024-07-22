@@ -51,6 +51,20 @@ const baseRules: ConfigWithExtends = {
         allowNever: false,
       },
     ],
+    '@typescript-eslint/strict-boolean-expressions': [
+      'error',
+      {
+        allowString: false,
+        allowNumber: false,
+        allowNullableObject: false,
+        allowNullableBoolean: false,
+        allowNullableString: false,
+        allowNullableNumber: false,
+        allowNullableEnum: false,
+        allowAny: false,
+        allowRuleToRunWithoutStrictNullChecksIKnowWhatIAmDoing: false,
+      },
+    ],
   },
 };
 

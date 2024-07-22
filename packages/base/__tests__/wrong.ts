@@ -12,8 +12,11 @@ function b() {
 }
 
 const c: number = 1;
-const d = `aa ${c || null}`;
+const d = `aa ${c === 1 || null}`;
+
+const e: boolean | null = false;
+const f = e && 'asdf';
 
 // below is correct
-console.debug(a, d);
+console.debug(a, d, f);
 b();
