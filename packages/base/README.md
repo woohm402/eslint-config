@@ -19,7 +19,11 @@ Add the following to your `eslint.config.js` file:
 ```js
 import woohm402EslintConfigBase from '@woohm402/eslint-config-base';
 
-export default [...woohm402EslintConfigBase()];
+export default [
+  ...woohm402EslintConfigBase({
+    envAllowedFiles: ['src/main.ts'],
+  }),
+];
 ```
 
 <br />
@@ -47,3 +51,6 @@ It also includes the following additional rules:
   - This rule disallows usage of `process.env` in too many places.
   - Env variables are hard to track and should be used sparingly.
   - You might need to use env variable, so pass `envAllowedFiles` option to this rule. They will be ignored.
+- `'@typescript-eslint/no-shadow'`
+- `'@typescript-eslint/restrict-template-expressions'`
+- `'@typescript-eslint/strict-boolean-expressions'`
