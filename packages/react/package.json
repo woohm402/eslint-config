@@ -34,9 +34,9 @@
   },
   "homepage": "https://github.com/woohm402/eslint-config-woohm402#readme",
   "dependencies": {
-    "@eslint/compat": "1.1.0",
+    "@eslint/compat": "1.1.1",
     "@woohm402/eslint-config-base": "0.3.1",
-    "eslint-plugin-react": "^7.34.3",
+    "eslint-plugin-react": "7.35.0",
     "eslint-plugin-react-hooks": "4.6.2"
   },
   "peerDependencies": {
@@ -48,11 +48,11 @@
   },
   "devDependencies": {
     "@types/eslint": "8.56.10",
-    "@types/node": "20.14.8",
+    "@types/node": "20.14.11",
     "@types/react": "18.3.3",
-    "eslint": "9.5.0",
-    "tsup": "8.1.0",
-    "typescript": "5.5.2",
+    "eslint": "9.7.0",
+    "tsup": "8.2.2",
+    "typescript": "5.5.3",
     "vitest": "1.6.0"
   }
 }
