@@ -40,6 +40,17 @@ const baseRules: ConfigWithExtends = {
     '@eslint-community/eslint-comments/no-use': ['error', { allow: [] }],
     'no-shadow': 'off',
     '@typescript-eslint/no-shadow': 'error',
+    '@typescript-eslint/restrict-template-expressions': [
+      'error',
+      {
+        allowAny: false,
+        allowBoolean: false,
+        allowNullish: false,
+        allowNumber: true,
+        allowRegExp: false,
+        allowNever: false,
+      },
+    ],
   },
 };
 
@@ -70,11 +81,18 @@ type Options = { envAllowedFiles?: string[] };
 export default (options?: Options) =>
   tseslint.config(
     eslint.configs.recommended,
-    ...tseslint.configs.strict,
+    ...tseslint.configs.strictTypeChecked,
     eslintPluginPrettierRecommended,
+    {
+      languageOptions: {
+        parserOptions: {
+          project: true,
+          tsconfigRootDir: import.meta.dirname,
+        },
+      },
+    },
     baseRules,
-    noRestrictedSyntaxForEnvNotAllowedFiles(options),
     ...(options?.envAllowedFiles && options.envAllowedFiles.length > 0
       ? [noRestrictedSyntaxForEnvAllowedFiles(options)]
-      : []),
+      : [noRestrictedSyntaxForEnvNotAllowedFiles(options)]),
   );
