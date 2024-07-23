@@ -1,10 +1,10 @@
-import woohm402 from '@woohm402/eslint-config-base';
+import base from '@woohm402/eslint-config-base';
 import eslintPluginReactHooks from 'eslint-plugin-react-hooks';
 import reactRecommended from 'eslint-plugin-react/configs/recommended.js';
 import { fixupPluginRules, fixupConfigRules } from '@eslint/compat';
 
-export default (options?: Parameters<typeof woohm402>[0]) => [
-  ...woohm402(options),
+export default (options: Parameters<typeof base>[0]) => [
+  ...base(options),
   ...fixupConfigRules(reactRecommended),
   {
     plugins: {
