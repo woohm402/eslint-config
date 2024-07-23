@@ -40,6 +40,7 @@ const baseRules: ConfigWithExtends = {
     '@eslint-community/eslint-comments/no-use': ['error', { allow: [] }],
     'no-shadow': 'off',
     '@typescript-eslint/no-shadow': 'error',
+    '@typescript-eslint/unbound-method': 'off',
     '@typescript-eslint/restrict-template-expressions': [
       'error',
       {
