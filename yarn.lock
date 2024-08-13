@@ -1015,24 +1015,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@woohm402/eslint-config-base@npm:0.5.0":
-  version: 0.5.0
-  resolution: "@woohm402/eslint-config-base@npm:0.5.0"
-  dependencies:
-    "@eslint-community/eslint-plugin-eslint-comments": "npm:4.3.0"
-    eslint-config-prettier: "npm:9.1.0"
-    eslint-plugin-prettier: "npm:5.2.1"
-    eslint-plugin-simple-import-sort: "npm:12.1.1"
-    typescript-eslint: "npm:7.16.1"
-  peerDependencies:
-    eslint: ">= 9"
-    prettier: ">= 3"
-    typescript: ">= 5"
-  checksum: 10c0/79ede8543ce9ce938620315590c4414477b7d6401e3947691cb63ff370319e1faa5349f59fdcd0375ba43c7e85bfaaa8139dcb6fcc53da8c1ecf8e3e0de025e5
-  languageName: node
-  linkType: hard
-
-"@woohm402/eslint-config-base@workspace:packages/base":
+"@woohm402/eslint-config-base@npm:0.6.0, @woohm402/eslint-config-base@workspace:packages/base":
   version: 0.0.0-use.local
   resolution: "@woohm402/eslint-config-base@workspace:packages/base"
   dependencies:
@@ -1063,7 +1046,7 @@ __metadata:
     "@types/eslint": "npm:8.56.10"
     "@types/node": "npm:20.14.11"
     "@types/react": "npm:18.3.3"
-    "@woohm402/eslint-config-base": "npm:0.5.0"
+    "@woohm402/eslint-config-base": "npm:0.6.0"
     eslint: "npm:9.7.0"
     eslint-plugin-react: "npm:7.35.0"
     eslint-plugin-react-hooks: "npm:4.6.2"
