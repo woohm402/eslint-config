@@ -1,6 +1,5 @@
 import ESLintPluginESLintCommentsConfigs from '@eslint-community/eslint-plugin-eslint-comments/configs';
 import simpleImportSort from 'eslint-plugin-simple-import-sort';
-import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended';
 import eslint from '@eslint/js';
 import tseslint, { ConfigWithExtends } from 'typescript-eslint';
 
@@ -97,7 +96,6 @@ export default (options: Options) =>
   tseslint.config(
     eslint.configs.recommended,
     ...tseslint.configs.strictTypeChecked,
-    eslintPluginPrettierRecommended,
     {
       languageOptions: {
         parserOptions: {

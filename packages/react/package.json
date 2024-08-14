@@ -1,6 +1,6 @@
 {
   "name": "@woohm402/eslint-config-react",
-  "version": "0.5.1",
+  "version": "0.6.0",
   "description": "Base config for TypeScript React",
   "scripts": {
     "build": "tsup",
@@ -35,16 +35,15 @@
   "homepage": "https://github.com/woohm402/eslint-config-woohm402#readme",
   "dependencies": {
     "@eslint/compat": "1.1.1",
-    "@woohm402/eslint-config-base": "0.6.0",
+    "@woohm402/eslint-config-base": "0.7.0",
     "eslint-plugin-react": "7.35.0",
     "eslint-plugin-react-hooks": "4.6.2"
   },
   "peerDependencies": {
-    "@types/react": ">= 18",
-    "eslint": ">= 9",
-    "prettier": ">= 3",
-    "react": ">= 18",
-    "typescript": ">= 5"
+    "@types/react": "^18.0.0",
+    "eslint": "^9.0.0",
+    "react": "^18.0.0",
+    "typescript": "^5.0.0"
   },
   "devDependencies": {
     "@types/eslint": "8.56.10",
