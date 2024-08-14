@@ -44,7 +44,6 @@ export default [
 This configuration extends the following recommended configurations:
 
 - `eslint`
-- `eslint-plugin-prettier`
 - `typescript-eslint`
 
 It also includes the following additional rules:
