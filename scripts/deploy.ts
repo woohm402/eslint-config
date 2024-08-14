@@ -14,7 +14,7 @@ const execa = (command: string) =>
 const deploy = async (target: 'base' | 'react') => {
   console.log('Deploying', target);
   const packageJson = await import(`../packages/${target}/package.json`);
-  const tagName = `react-v${packageJson.version}`;
+  const tagName = `${target}-v${packageJson.version}`;
   await execa(`git tag ${tagName}`);
   await execa(`git push origin ${tagName}`);
   console.log('Tag pushed', tagName);
