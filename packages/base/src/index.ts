@@ -38,7 +38,7 @@ const baseRules: ConfigWithExtends = {
     'simple-import-sort/imports': 'error',
     '@eslint-community/eslint-comments/no-use': ['error', { allow: [] }],
     'no-shadow': 'off',
-    '@typescript-eslint/no-shadow': 'error',
+    '@typescript-eslint/no-shadow': ['error', { allow: ['_'] }],
     '@typescript-eslint/unbound-method': 'off',
     '@typescript-eslint/restrict-template-expressions': [
       'error',
