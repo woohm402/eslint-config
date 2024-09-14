@@ -1,10 +1,10 @@
 {
   "name": "@woohm402/eslint-config-base",
-  "version": "0.7.1",
+  "version": "0.7.2",
   "description": "Base config for TypeScript",
   "scripts": {
-    "build": "tsup",
-    "test": "vitest run",
+    "build": "bun build --entry src/index.ts --target node",
+    "test": "bun test",
     "deploy": "npm publish"
   },
   "type": "module",
@@ -47,8 +47,6 @@
     "@types/eslint": "8.56.10",
     "@types/node": "20.14.11",
     "eslint": "9.7.0",
-    "tsup": "8.2.2",
-    "typescript": "5.5.3",
-    "vitest": "1.6.0"
+    "typescript": "5.5.3"
   }
 }
