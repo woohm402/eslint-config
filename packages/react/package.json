@@ -3,7 +3,7 @@
   "version": "0.6.2",
   "description": "Base config for TypeScript React",
   "scripts": {
-    "build": "bun build --entry src/index.ts --target node",
+    "build": "bun build --entry src/index.ts --target node --outdir ./dist",
     "test": "bun test",
     "deploy": "npm publish"
   },
@@ -36,7 +36,7 @@
   "dependencies": {
     "@eslint/compat": "1.1.1",
     "@woohm402/eslint-config-base": "0.7.2",
-    "eslint-plugin-react": "7.35.0",
+    "eslint-plugin-react": "7.36.1",
     "eslint-plugin-react-hooks": "4.6.2"
   },
   "peerDependencies": {
@@ -46,10 +46,10 @@
     "typescript": "^5.0.0"
   },
   "devDependencies": {
-    "@types/eslint": "8.56.10",
-    "@types/node": "20.14.11",
-    "@types/react": "18.3.3",
-    "eslint": "9.7.0",
-    "typescript": "5.5.3"
+    "@types/eslint": "9.6.1",
+    "@types/node": "22.5.5",
+    "@types/react": "18.3.5",
+    "eslint": "9.10.0",
+    "typescript": "5.6.2"
   }
 }
