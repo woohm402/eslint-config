@@ -22,8 +22,5 @@ jobs:
       - name: Install dependencies
         run: bun install
 
-      - name: Run tests
-        run: bun run test
-
-      - name: Check code formatting
-        run: bun format:check
+      - name: Check all
+        run: bun check-all
