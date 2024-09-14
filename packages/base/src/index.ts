@@ -99,7 +99,7 @@ export default (options: Options) =>
     {
       languageOptions: {
         parserOptions: {
-          project: true,
+          projectService: true,
           tsconfigRootDir: options.tsconfigRootDir,
         },
       },

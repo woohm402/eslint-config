@@ -1,4 +1,8 @@
 import eslint from 'eslint';
 import typescript from 'typescript';
 
-console.debug({ eslint, typescript });
+const a = [[]];
+
+const b = a.map((_) => _.map((_) => _));
+
+console.debug({ eslint, typescript, b });

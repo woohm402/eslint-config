@@ -10,7 +10,7 @@ ESLint configuration for TypeScript projects
 
 ### Installation
 
-install from npm or yarn:
+Install the package:
 
 ```sh
 npm install --save-dev @woohm402/eslint-config-base

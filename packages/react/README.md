@@ -9,7 +9,7 @@ This includes `@woohm402/eslint-config-base` and additional rules for React proj
 
 ## Installation
 
-install from npm or yarn:
+install:
 
 ```sh
 npm install --save-dev @woohm402/eslint-config-react

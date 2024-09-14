@@ -7,18 +7,21 @@
   "scripts": {
     "test": "turbo run test",
     "build": "turbo run build",
-    "prettier": "prettier . --check",
-    "deploy": "tsx ./scripts/deploy.ts"
+    "format:check": "prettier . --check",
+    "format:fix": "prettier . --write",
+    "unused:check": "knip",
+    "deploy": "bun run ./scripts/deploy.ts",
+    "check-all": "bun run test && bun run format:check && bun run unused:check"
   },
   "devDependencies": {
-    "@types/node": "22.3.0",
+    "@types/node": "22.5.5",
+    "knip": "5.30.2",
     "prettier": "3.3.3",
-    "tsx": "4.17.0",
-    "turbo": "2.0.9",
-    "typescript": "5.5.3"
+    "turbo": "2.1.2",
+    "typescript": "5.6.2"
   },
   "workspaces": [
     "packages/*"
   ],
-  "packageManager": "yarn@4.4.0"
+  "packageManager": "bun@1.1.27"
 }

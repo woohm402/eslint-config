@@ -13,14 +13,14 @@ jobs:
       contents: read
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: oven-sh/setup-bun@v2
         with:
-          node-version: 20
+          bun-version: 1.1.27
 
       # npm 공용 레지스트리에 배포
       - name: Publish to npm
         run: |
-          yarn
-          yarn build
+          bun install
+          bun run build
           echo "//registry.npmjs.org/:_authToken=${{secrets.NPM_TOKEN}}" > ~/.npmrc
-          yarn workspace @woohm402/eslint-config-base deploy
+          bun run --filter=@woohm402/eslint-config-base deploy
