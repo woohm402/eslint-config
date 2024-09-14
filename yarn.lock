@@ -1017,7 +1017,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@woohm402/eslint-config-base@npm:0.7.0, @woohm402/eslint-config-base@workspace:packages/base":
+"@woohm402/eslint-config-base@npm:0.7.1, @woohm402/eslint-config-base@workspace:packages/base":
   version: 0.0.0-use.local
   resolution: "@woohm402/eslint-config-base@workspace:packages/base"
   dependencies:
@@ -1045,7 +1045,7 @@ __metadata:
     "@types/eslint": "npm:8.56.10"
     "@types/node": "npm:20.14.11"
     "@types/react": "npm:18.3.3"
-    "@woohm402/eslint-config-base": "npm:0.7.0"
+    "@woohm402/eslint-config-base": "npm:0.7.1"
     eslint: "npm:9.7.0"
     eslint-plugin-react: "npm:7.35.0"
     eslint-plugin-react-hooks: "npm:4.6.2"
