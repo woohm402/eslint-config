@@ -28,18 +28,15 @@ const envRestrictSyntax = [
 
 const baseRules: ConfigWithExtends = {
   plugins: {
-    'simple-import-sort': simpleImportSort,
     '@eslint-community/eslint-comments':
       ESLintPluginESLintCommentsConfigs.recommended.plugins[
         '@eslint-community/eslint-comments'
       ],
+    'simple-import-sort': simpleImportSort,
   },
   rules: {
-    'simple-import-sort/imports': 'error',
     '@eslint-community/eslint-comments/no-use': ['error', { allow: [] }],
-    'no-shadow': 'off',
     '@typescript-eslint/no-shadow': ['error', { allow: ['_'] }],
-    '@typescript-eslint/unbound-method': 'off',
     '@typescript-eslint/restrict-template-expressions': [
       'error',
       {
@@ -65,6 +62,10 @@ const baseRules: ConfigWithExtends = {
         allowRuleToRunWithoutStrictNullChecksIKnowWhatIAmDoing: false,
       },
     ],
+    '@typescript-eslint/unbound-method': 'off',
+    'no-shadow': 'off',
+    'simple-import-sort/imports': 'error',
+    eqeqeq: ['error', 'always', { null: 'ignore' }],
   },
 };
 
