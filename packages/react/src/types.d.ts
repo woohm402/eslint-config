@@ -7,6 +7,6 @@ declare module '@eslint/compat' {
   export const fixupConfigRules: any;
 }
 
-declare module 'eslint-plugin-react/configs/recommended.js' {
+declare module 'eslint-plugin-react' {
   export const configs: any;
 }
