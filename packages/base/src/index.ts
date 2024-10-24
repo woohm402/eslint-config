@@ -37,6 +37,15 @@ const baseRules: ConfigWithExtends = {
   rules: {
     '@eslint-community/eslint-comments/no-use': ['error', { allow: [] }],
     '@typescript-eslint/no-shadow': ['error', { allow: ['_'] }],
+    '@typescript-eslint/no-unused-vars': [
+      'error',
+      {
+        ignoreRestSiblings: true,
+        argsIgnorePattern: '^_$',
+        varsIgnorePattern: '^_$',
+        caughtErrorsIgnorePattern: '^_$',
+      },
+    ],
     '@typescript-eslint/restrict-template-expressions': [
       'error',
       {
@@ -63,9 +72,9 @@ const baseRules: ConfigWithExtends = {
       },
     ],
     '@typescript-eslint/unbound-method': 'off',
+    eqeqeq: ['error', 'smart'],
     'no-shadow': 'off',
     'simple-import-sort/imports': 'error',
-    eqeqeq: ['error', 'always', { null: 'ignore' }],
   },
 };
 
