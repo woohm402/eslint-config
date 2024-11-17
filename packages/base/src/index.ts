@@ -107,6 +107,9 @@ export default (options: Options) =>
     eslint.configs.recommended,
     ...tseslint.configs.strictTypeChecked,
     {
+      ignores: ['**/*.js', 'dist', 'build', 'node_modules'],
+    },
+    {
       languageOptions: {
         parserOptions: {
           projectService: true,
