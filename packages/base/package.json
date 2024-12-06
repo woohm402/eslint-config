@@ -1,6 +1,6 @@
 {
   "name": "@woohm402/eslint-config-base",
-  "version": "0.11.0",
+  "version": "0.12.0",
   "description": "Base config for TypeScript",
   "scripts": {
     "build": "tsup",
@@ -33,19 +33,19 @@
   },
   "homepage": "https://github.com/woohm402/eslint-config-woohm402#readme",
   "dependencies": {
-    "@eslint-community/eslint-plugin-eslint-comments": "4.4.0",
+    "@eslint-community/eslint-plugin-eslint-comments": "4.4.1",
     "eslint-plugin-simple-import-sort": "12.1.1",
-    "typescript-eslint": "8.11.0",
-    "@eslint/js": "9.13.0"
+    "typescript-eslint": "8.17.0",
+    "@eslint/js": "9.16.0"
   },
   "peerDependencies": {
     "eslint": "^9.0.0",
     "typescript": "^5.0.0"
   },
   "devDependencies": {
-    "@types/node": "22.7.9",
-    "eslint": "9.13.0",
-    "tsup": "8.3.0",
-    "typescript": "5.6.3"
+    "@types/node": "22.10.1",
+    "eslint": "9.16.0",
+    "tsup": "8.3.5",
+    "typescript": "5.7.2"
   }
 }
